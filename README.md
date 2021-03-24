@@ -82,6 +82,7 @@ private:
     {
         MultipartConsumer* me = (MultipartConsumer*)multipart_parser_get_data(p);
         me->m_headers++;
+        return 0;
     }
 
     multipart_parser* m_parser;
